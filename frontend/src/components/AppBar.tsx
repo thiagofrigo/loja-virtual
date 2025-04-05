@@ -138,7 +138,7 @@ function ResponsiveAppBar() {
                 placeholder="Buscar"
                 slotProps={{
                   input: {
-                    endAdornment: 
+                    endAdornment:
                       (<IconButton type='submit' aria-label='search'>
                         <SearchIcon style={{fill: 'grey'}}/>
                       </IconButton>)
