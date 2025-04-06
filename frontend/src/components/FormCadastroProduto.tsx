@@ -10,6 +10,7 @@ import { TextField,
  import FormControl from '@mui/material/FormControl';
  import Visibility from '@mui/icons-material/Visibility';
  import VisibilityOff from '@mui/icons-material/VisibilityOff';
+ import SearchIcon from "@mui/icons-material/Search";
 
 const FormCadastroProduto = () => {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -109,6 +110,88 @@ const FormCadastroProduto = () => {
                         }}
                     />
                 </Box> 
+
+                <Box
+                    sx={{
+                        display:'flex',
+                        flexDirection:'row',
+                        gap:2,
+                        width:'100%',
+                    }}
+                >
+                    <TextField
+                        id='cep'
+                        label="CEP"
+                        sx={{
+                            width: "50%",
+                        }}
+                        slotProps={{
+                            input:{
+                                endAdornment:(
+                                    <IconButton>
+                                        <SearchIcon/>
+                                    </IconButton>
+                                )
+                            }
+                        }}
+                    />
+                </Box>
+
+                <Box
+                    sx={{
+                        display:'flex',
+                        flexDirection:'row',
+                        gap:2,
+                        width:'100%',
+                    }}
+                >
+                    <TextField
+                        id='street'
+                        label="Logradouro"
+                        fullWidth
+                    />
+                    <TextField
+                        id='number'
+                        label="Número"
+                        fullWidth
+                    />
+                </Box>
+
+                <Box>
+                    <TextField
+                        id='complement'
+                        label="Complemento"
+                        fullWidth
+                    />
+                    
+
+                </Box>
+
+                <Box
+                    sx={{
+                        display:'flex',
+                        flexDirection:'row',
+                        gap:2,
+                        width:'100%',
+                    }}
+                >
+                    <TextField
+                        id='neighborhood'
+                        label="Bairro"
+                        fullWidth
+                    />
+
+                    <TextField
+                        id='city'
+                        label="Cidade"
+                        fullWidth
+                    />
+                    <TextField
+                        id='state'
+                        label="Estado"
+                        fullWidth
+                    />
+                </Box>  
 
                 <Button>Enviar</Button>
             </Box>                    
