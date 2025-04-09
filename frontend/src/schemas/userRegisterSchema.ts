@@ -69,7 +69,8 @@ export const schemaUserRegister = yup.object().shape({
     
     complement: yup
         .string()
-        .notRequired(),
+        .required()
+        .default(""),
     
     neighborhood: yup
         .string()

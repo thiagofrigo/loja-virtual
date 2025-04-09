@@ -6,11 +6,11 @@ export const userRegisterDefaultValues: FormUserRegister = {
     emailConfirmation: "",
     password: "",
     passwordConfirmation: "",
-    dateOfBirth: new Date(), // ou string vazia, dependendo de como será o input
+    dateOfBirth: new Date(), 
     cep: "",
     street: "",
     number: "",
-    complement: "", // pode ser string vazia mesmo sendo opcional
+    complement: "", 
     neighborhood: "",
     city: "",
     state: "",
